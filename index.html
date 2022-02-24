@@ -119,9 +119,10 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="btn" id="button">See Projects</button>
-          <div id="curser"></div>
-          <!-- <img src="../Portfolio-Desktop-version/images/hand-cursor.png" alt="" id="curser"> -->
+          <div id="btn-curser">
+            <button type="button" class="btn" id="button">See Projects</button>
+            <div id="curser"></div>
+          </div>
         </div>
       </section>
 
@@ -167,29 +168,18 @@
               <div id="about-social">
                 <p>Let's connect</p>
                 <ul class="social-icons">
-                  <li>
-                    <img src="images/twitter.svg" alt="twitter" />
-                  </li>
-                  <li>
-                    <img src="images/Linkedin.svg" alt="Linkedin" />
-                  </li>
-                  <li>
-                    <img src="images/medium.svg" alt="medium" />
-                  </li>
-                  <li>
-                    <img src="images/github.svg" alt="github" />
-                  </li>
-                  <li>
-                    <img src="images/angellist.svg" alt="angellist" />
-                  </li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin"></i></li>
+                  <li><i class="fa-brands fa-medium"></i></li>
+                  <li><i class="fa-brands fa-github"></i></li>
+                  <li><i class="fa-brands fa-angellist"></i></li>
                 </ul>
               </div>
-      
+              
               <button type="button" id="get-resume">Get my resume</button>      
-        </div>  
-        
-        <!-- skills -->
-        <div>
+            </div>  
+  
+            <div class="lang">
           <ul class="showcase">
             <li class="showcase-list">
               <p>Languages</p>
@@ -198,15 +188,15 @@
             <li>
               <ul id="languages">
                 <li class="language">
-                  <img src="./images/Ellipse_1.png" alt="JavaScript" />
+                  <img src="./images/javascript.png" alt="JavaScript" />
                   <p>JavaScript</p>
                 </li>
                 <li class="language">
-                  <img src="./images/Ellipse_1_(1).png" alt="JavaScript" />
+                  <img src="./images/html5.png" alt="JavaScript" />
                   <p>HTML</p>
                 </li>
                 <li class="language">
-                  <img src="./images/Ellipse_1_(2).png" alt="JavaScript" />
+                  <img src="./images/css3.png" alt="JavaScript" />
                   <p>CSS</p>
                 </li>
               </ul>
@@ -223,6 +213,17 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+      <section id="contacts">
+        <footer>
+            <h2>Contact me</h2>
+            <p id="para">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+            <form action="https://formspree.io/f/mpzbdeab" method="post">
+              <input class="name" type="text" name="user-name" maxlength="30" placeholder="Write Your Name Here" required>
+              <input class="email" type="email" name="user-email" placeholder="Write Your Email Here" required>
+              <textarea  class="textarea" name="comments" id="name" cols="30" rows="10" maxlength="500"  placeholder=" Write your message here " required></textarea>        
+              <button class="button" type="submit">Get in Touch</button>
+            </form>
+        </footer>
+      </section>
   </body>
 </html>
